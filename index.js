@@ -1,23 +1,11 @@
 
-var canvas = document.getElementById("myCanvas");
-  if (!canvas) {
-    canvas = document.createElement("canvas");
-    canvas.id = "myCanvas";
-    document.body.appendChild(canvas);
-  }
-
-  // Get canvas context and set dimensions
-  var ctx = canvas.getContext("2d");
-  canvas.width = 500;  // Adjust width as needed
-  canvas.height = 300; // Adjust height as needed
-
-  // Define rectangle properties and center it
-  var rectWidth = 200;
-  var rectHeight = 150;
-  var rectX = (canvas.width - rectWidth) / 2;
-  var rectY = (canvas.height - rectHeight) / 2;
-
-  // Draw the blue rectangle
-  ctx.fillStyle = "blue";
-  ctx.fillRect(rectX, rectY, rectWidth, rectHeight);
+  var rect = document.createElement('div');
+  rect.style.position = 'fixed';
+  rect.style.top = '10px'; // Adjust as needed
+  rect.style.left = '10px'; // Adjust as needed
+  rect.style.width = '200px'; // Adjust as needed
+  rect.style.height = '100px'; // Adjust as needed
+  rect.style.backgroundColor = 'blue';
+  rect.style.opacity = 0.5; // Adjust transparency (0 for fully transparent, 1 for fully opaque)
+  document.body.appendChild(rect);
 })();
