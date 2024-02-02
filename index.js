@@ -1,4 +1,3 @@
-// Gui made by Blake!
 
 var canvas = document.createElement("canvas");
   canvas.id = "myCanvas";
